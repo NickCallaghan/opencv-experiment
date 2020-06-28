@@ -7,6 +7,11 @@ face_cascade = cv2.CascadeClassifier(
 palm_cascade = cv2.CascadeClassifier('haar/palm_v4.xml')
 fist_cascade = cv2.CascadeClassifier('haar/fist_v3.xml')
 
+# def detect_objects(haar_file, )
+#     object_cascade = cv2.CascadeClassifier(haar_file)
+
+#     retrun object_list
+
 while (True):
     # Capture frame by frame
     ret, frame = cap.read()
