@@ -32,7 +32,7 @@ for file in face_files:
     cv2.imshow("Image", resized_image)
     key_code = cv2.waitKeyEx()
     if key_code == 32:
-        print("Image Correctly Identified)
+        print("Image Correctly Identified")
         total_correct += 1
     else:
         print('Key Pressed: ', key_code)
