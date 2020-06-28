@@ -27,8 +27,6 @@ while (True):
     detected_fists = fist_cascade.detectMultiScale(
         grey, scaleFactor=1.10, minNeighbors=11)
 
-    print(detected_fists)
-
     for x, y, w, h in detected_faces:
         # Update original image putting rectangle round faces
         frame = cv2.rectangle(frame, (x, y), (x+w, y+h),
